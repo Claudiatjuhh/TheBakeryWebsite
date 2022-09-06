@@ -1,0 +1,69 @@
+@import './mixins';
+
+div.about__bg--line{
+    background-color: #adcbc2;
+    height: 61rem;
+    width: 23rem;
+    z-index: -3;
+    margin-left: 60%;
+    position: absolute;
+}
+section.about__section{
+    position: relative;
+    margin: 9rem 10rem 3rem 10rem;
+    height: 52.5rem;
+    width: 80%;
+    div.about__container{
+        div.about__row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div.about__title{
+                width: 100%;
+                h2{
+                    font-family: 'Roboto Slab', serif;
+                    font-weight: 700;
+                    font-size: 60px;
+                }
+                p{
+                    font-family: 'Roboto Slab', serif;
+                    font-weight: 400;
+                    font-size: 24px;
+                }
+            }
+            img.about__img--left{
+            margin-top: 3rem;
+            width: 25rem;
+            }
+            div.about__content{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                button.main__btn{
+                    margin: 3rem 0 0 0;
+                    @include main__btn;
+                    border: 2px solid #000;
+                    width: 15rem;
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+            div.about__img--right{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                img{
+                    width: 30rem;
+                }
+            }
+        }
+    }
+}

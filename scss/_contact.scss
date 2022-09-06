@@ -1,0 +1,64 @@
+section.contact__section{
+    background-image: url(../img/contact_photo.png);
+    background-size: cover;
+    height: 61rem;
+    z-index: -3;
+    display: flex;       
+    align-items: center;
+
+    div.contact__content--container{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.52);
+        height: 40rem;
+        width: 40rem;
+        margin: 0 0 0 5rem;
+        flex-direction: column;
+        div.contact__title{
+            margin-bottom: 1.5rem;
+            p{
+                text-align: center;
+                color: #fff;
+                font-family: 'Roboto Slab', serif;
+                font-weight: 700;
+                font-size: 60px;
+            }
+        }
+        div.contact__links{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            div.contact__link--item{
+                margin-bottom: 1.5rem;
+                width: 15rem;
+                height: 15rem;
+                text-align: center;
+                ion-icon.contact__icon{
+                    margin: 3rem 0 0 0;
+                    font-size: 3.5em;
+                    color: #fff;
+                }
+                p{
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 400;
+                    font-size: 24px;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            div.media{
+                p{
+                    margin:2rem 0 0 0;
+                }
+                div.media__row{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 2.5rem;
+                    ion-icon.contact__media{
+                        font-size: 2em;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
