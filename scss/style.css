@@ -171,6 +171,28 @@ section.about__section div.about__container div.about__row div.about__img--right
   width: 30rem;
 }
 
+.from-left {
+  grid-column: 2/3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3/4;
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 section.products__section {
   margin: 0rem 10rem 10rem 10rem;
   display: flex;

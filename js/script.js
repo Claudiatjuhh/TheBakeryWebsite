@@ -5,6 +5,7 @@ const appearOptions = {
     threshold: 0,
     rootMargin: "0px 0px -150px 0px"
 };
+const sliders = document.querySelectorAll(".slide-in")
 
 // * The IntersectionObserver API lets code register a callback-function.
 // * This function will be executed when an element I want to monitor enters or exits another element.
@@ -36,4 +37,8 @@ faders.forEach(fader => {
         // * for each fader inside of faders I want to run appearOnScroll.
     appearOnScroll.observe(fader);
   });
+
+sliders.forEach( slider => {
+    appearOnScroll.observe(slider);
+})
   
