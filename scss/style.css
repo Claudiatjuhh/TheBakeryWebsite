@@ -8,11 +8,11 @@
 section.hero__section {
   background-image: url(../img/hero_photo.jpg);
   background-size: cover;
-  height: 61rem;
+  height: 61.5rem;
 }
 section.hero__section div.hero__img--overlay {
   background-color: rgba(0, 0, 0, 0.52);
-  height: 61rem;
+  height: 61.5rem;
 }
 section.hero__section div.hero__img--overlay header {
   display: flex;
@@ -172,7 +172,7 @@ section.about__section div.about__container div.about__row div.about__img--right
 }
 
 section.products__section {
-  margin: 0rem 10rem 3rem 10rem;
+  margin: 0rem 10rem 10rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,10 +209,19 @@ section.products__section div.products__container div.product__row.row_2 {
   margin: 0 3rem 0 3rem;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 section.contact__section {
   background-image: url(../img/contact_photo.png);
   background-size: cover;
-  height: 61rem;
+  height: 61.5rem;
   z-index: -3;
   display: flex;
   align-items: center;
